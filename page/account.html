@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/page/account.css">
+    <!-- fav-icon -->
+    <link rel="icon" href="" type="image/x-icon">
+   
+</head>
+
+<body>
+
+      <script script src="/assets/js/preloader.js"></script>
+    <div class="header_component"></div>
+
+    <main class="account" id="account">
+        <div class="container_account">
+            <section class="account__grid">
+                <!-- SIDEBAR / MOBILE MENU -->
+                <aside class="account-nav">
+                    <div class="account-nav__user">
+                        <div class="account-nav__avatar">C</div>
+                        <div class="account-nav__name sub_title">Северин Коваль</div>
+                    </div>
+                    <nav class="account-nav__list">
+                        <button class="account-nav__link is-active to-personal">Персональні дані</button>
+                        <button class="account-nav__link to-access">Дані доступу</button>
+                        <button class="account-nav__link to-orders">Мої замовлення</button>
+                        <button class="account-nav__link to-wishlist">Вішліст</button>
+                    </nav>
+                    <button class="account-nav__logout">Вийти</button>
+                </aside>
+
+                <!-- CONTENT -->
+                <section class="account-content">
+                    <div class="account__mobilebar">
+                       
+                       
+                          <div class="breadcrumbs">
+                        <button  class="breadcrumb to-menu">Кабінет</button>
+                        <div class="badge"></div>
+                        <p class="breadcrumb">Персональні дані</p>
+                    </div>
+                    </div>
+
+                    <!-- PERSONAL -->
+                    <section class="account__section account__section--personal is-active">
+                        <h2 class="h2_title section-title">ПЕРСОНАЛЬНІ ДАНІ</h2>
+
+                        <div class="block">
+                            <h3 class="h3_title block__title">КОНТАКТНА ІНФОРМАЦІЯ</h3>
+                            <div class="form-grid">
+                                <div class="input-box"><label>Імʼя</label>
+                                    <div class="input"><input placeholder="Імʼя" /></div>
+                                </div>
+                                <div class="input-box"><label>Прізвище</label>
+                                    <div class="input"><input placeholder="Прізвище" /></div>
+                                </div>
+                                <div class="input-box"><label>Електронна пошта</label>
+                                    <div class="input"><input type="email" placeholder="Електронна пошта" /></div>
+                                </div>
+                                <div class="input-box"><label>Телефон</label>
+                                    <div class="input"><input placeholder="Телефон" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block last">
+                            <h3 class="h3_title block__title">АДРЕСА</h3>
+                            <div class="form-grid">
+                                <div class="input-box"><label>Адреса</label>
+                                    <div class="input"><input placeholder="Адреса" /></div>
+                                </div>
+                                <div class="input-box"><label>Поштовий індекс</label>
+                                    <div class="input"><input placeholder="Поштовий індекс" /></div>
+                                </div>
+                                <div class="input-box"><label>Область/регіон</label>
+                                    <div class="input"><input placeholder="Область/регіон" /></div>
+                                </div>
+                                <div class="input-box"><label>Населений пункт</label>
+                                    <div class="input"><input placeholder="Населений пункт" /></div>
+                                </div>
+                                <div class="input-box"><label>Район</label>
+                                    <div class="input"><input placeholder="Район" /></div>
+                                </div>
+                                <div class="input-box"><label>Країна</label>
+                                    <div class="input"><input placeholder="Країна" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ACCESS -->
+                    <section class="account__section account__section--access">
+                        <h2 class="h2_title section-title">ДАНІ ДОСТУПУ</h2>
+
+
+                        <div class="block">
+                            <h3 class="h3_title block__title">ЗМІНИТИ ПАРОЛЬ</h3>
+
+
+                            <div class="form-grid form-grid--first-full">
+
+                                <div class="input-box">
+                                    <label>Поточний пароль*</label>
+                                    <div class="input">
+                                        <input type="password" placeholder="Поточний пароль"
+                                            autocomplete="current-password" />
+                                        <button type="button" class="auth-toggle">
+                                            <img src="/assets/img/icons/hide_eye.svg" alt="Показати пароль"
+                                                class="auth-icon" />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="input-box">
+                                    <label>Новий пароль*</label>
+                                    <div class="input">
+                                        <input type="password" placeholder="Новий пароль" autocomplete="new-password" />
+                                        <button type="button" class="auth-toggle">
+                                            <img src="/assets/img/icons/hide_eye.svg" alt="Показати пароль"
+                                                class="auth-icon" />
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="input-box">
+                                    <label>Повторіть пароль*</label>
+                                    <div class="input">
+                                        <input type="password" placeholder="Повторіть пароль*"
+                                            autocomplete="new-password" />
+                                        <button type="button" class="auth-toggle">
+                                            <img src="/assets/img/icons/hide_eye.svg" alt="Показати пароль"
+                                                class="auth-icon" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn gray">Змінити пароль</button>
+                        </div>
+
+
+                        <div class="block last">
+                            <h3 class="h3_title block__title">ЗМІНИТИ АДРЕСУ ЕЛ. ПОШТИ</h3>
+
+
+                            <div class="form-grid form-grid--first-full">
+
+                                <div class="input-box">
+                                    <label>Поточна адреса ел. пошти*</label>
+                                    <div class="input">
+                                        <input type="email" placeholder="Поточна адреса ел. пошти*"
+                                            autocomplete="email" />
+                                    </div>
+                                </div>
+
+
+                                <div class="input-box">
+                                    <label>Нова адреса ел. пошти*</label>
+                                    <div class="input">
+                                        <input type="email" placeholder="Нова адреса ел. пошти*" autocomplete="email" />
+                                    </div>
+                                </div>
+
+
+                                <div class="input-box">
+                                    <label>Повторіть адресу ел. пошти*</label>
+                                    <div class="input">
+                                        <input type="email" placeholder="Повторіть адресу ел. пошти*"
+                                            autocomplete="email" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn gray">Змінити адресу ел. пошти</button>
+                        </div>
+
+                    </section>
+
+                    <!-- ORDERS -->
+                    <section class="account__section account__section--orders ">
+                        <h2 class="h2_title section-title">МОЇ ЗАМОВЛЕННЯ</h2>
+                        <div class="filter-tabs">
+                            <div class="filter-tab active">
+                                <button id="menu-btn">Всі</button>
+                                <p class="filter-tab-number">(<span id="all__order">10</span>)</p>
+                            </div>
+                            <div class="filter-tab">
+                                <button>Отримані</button>
+                                <p class="filter-tab-number">(<span id="receiv__order">4</span>)</p>
+                            </div>
+                            <div class="filter-tab">
+                                <button>Скасовані</button>
+                                <p class="filter-tab-number">(<span id="cansel__order">6</span>)</p>
+                            </div>
+                        </div>
+                        <div class="orders">
+                            <div class="orders__row">
+                                <div class="orders__img">
+                                    <img src="/assets/img/photo_card.png" alt="" />
+                                </div>
+                                <div class="h5_title">Светр з круглою стійкою Coral</div>
+                                <div class="orders__cell">2шт</div>
+                                <div class="orders__cell orders__status">Відправлено</div>
+                                <div class="orders__cell">01.01.2026</div>
+                                <div class="orders__cell price">2400 ₴</div>
+                            </div>
+                            <div class="orders__row">
+                                <div class="orders__img">
+                                    <img src="/assets/img/photo_card.png" alt="" />
+                                </div>
+                                <div class="h5_title">Светр з круглою стійкою Coral</div>
+                                <div class="orders__cell">2шт</div>
+                                <div class="orders__cell orders__status">Відправлено</div>
+                                <div class="orders__cell">01.01.2026</div>
+                                <div class="orders__cell price">2400 ₴</div>
+                            </div>
+                            <div class="orders__row">
+                                <div class="orders__img">
+                                    <img src="/assets/img/photo_card.png" alt="" />
+                                </div>
+                                <div class="h5_title">Светр з круглою стійкою Coral</div>
+                                <div class="orders__cell">2шт</div>
+                                <div class="orders__cell orders__status">Відправлено</div>
+                                <div class="orders__cell">01.01.2026</div>
+                                <div class="orders__cell price">2400 ₴</div>
+                            </div>
+                            <div class="orders__row">
+                                <div class="orders__img">
+                                    <img src="/assets/img/photo_card.png" alt="" />
+                                </div>
+                                <div class="h5_title">Светр з круглою стійкою Coral</div>
+                                <div class="orders__cell">2шт</div>
+                                <div class="orders__cell orders__status">Відправлено</div>
+                                <div class="orders__cell">01.01.2026</div>
+                                <div class="orders__cell price">2400 ₴</div>
+                            </div>
+                            <div class="orders__row">
+                                <div class="orders__img">
+                                    <img src="/assets/img/photo_card.png" alt="" />
+                                </div>
+                                <div class="h5_title">Светр з круглою стійкою Coral</div>
+                                <div class="orders__cell">2шт</div>
+                                <div class="orders__cell orders__status">Відправлено</div>
+                                <div class="orders__cell">01.01.2026</div>
+                                <div class="orders__cell price">2400 ₴</div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- WISHLIST -->
+                    <section class="account__section account__section--wishlist ">
+                        <h2 class="h2_title section-title">ВІШЛІСТ</h2>
+                        <div class="items-section">
+                            <div class="wishlist  items-list">
+                                <a href="/page/product.html" class="catalog-grid-item item">
+                                    <div class="catalog-grid-item-photo">
+                                        <img src="/assets/img/photo_card.png" alt="photo">
+                                    </div>
+                                    <div class="catalog-grid-item-name">
+                                        <h5 class="h5_title">Светр з круглою стійкою coral</h5>
+                                        <p class="catalog-grid-item-price">2400 ₴<span class="old">3000 ₴</span><span
+                                                class="discount">-20%</span></p>
+                                    </div>
+                                    <div class="catalog-grid-item-info">
+                                        <div class="left">
+                                            <p>Колір</p>
+                                            <div class="colors">
+                                                <div class="color" style="--color: #37414a"></div>
+                                                <div class="color" style="--color: #887a70"></div>
+                                                <div class="color" style="--color: #758870"></div>
+                                                <div class="color" style="--color: #1a1715"></div>
+                                                <div class="color" style="--color: #b34a4c"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <p>Розмір</p>
+                                            <div class="sizes">
+                                                <div class="size active">S</div>
+                                                <div class="size">M</div>
+                                                <div class="size active">L</div>
+                                                <div class="size active">XL</div>
+                                                <div class="size">XXL</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="icon orange plus add-to-cart">
+                                        <img src="/assets/img/icons/plus.svg" alt="">
+                                    </button>
+                                    <button class="icon white like close">
+                                        <img src="/assets/img/icons/favorite.svg" alt="">
+                                    </button>
+                                </a>
+                                <a href="/page/product.html" class="catalog-grid-item item">
+                                    <div class="catalog-grid-item-photo">
+                                        <img src="/assets/img/photo_card1.png" alt="photo">
+                                    </div>
+                                    <div class="catalog-grid-item-name">
+                                        <h5 class="h5_title">Светр з круглою стійкою coral</h5>
+                                        <p class="catalog-grid-item-price">2400 ₴<span class="old">3000 ₴</span><span
+                                                class="discount">-20%</span></p>
+                                    </div>
+                                    <div class="catalog-grid-item-info">
+                                        <div class="left">
+                                            <p>Колір</p>
+                                            <div class="colors">
+                                                <div class="color" style="--color: #37414a"></div>
+                                                <div class="color" style="--color: #887a70"></div>
+                                                <div class="color" style="--color: #758870"></div>
+                                                <div class="color" style="--color: #1a1715"></div>
+                                                <div class="color" style="--color: #b34a4c"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <p>Розмір</p>
+                                            <div class="sizes">
+                                                <div class="size active">S</div>
+                                                <div class="size">M</div>
+                                                <div class="size active">L</div>
+                                                <div class="size active">XL</div>
+                                                <div class="size">XXL</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="icon orange plus add-to-cart">
+                                        <img src="/assets/img/icons/plus.svg" alt="">
+                                    </button>
+                                    <button class="icon white like close">
+                                        <img src="/assets/img/icons/favorite.svg" alt="">
+                                    </button>
+                                </a>
+                                <a href="/page/product.html" class="catalog-grid-item item">
+                                    <div class="catalog-grid-item-photo">
+                                        <img src="/assets/img/photo_card.png" alt="photo">
+                                    </div>
+                                    <div class="catalog-grid-item-name">
+                                        <h5 class="h5_title">Светр з круглою стійкою coral</h5>
+                                        <p class="catalog-grid-item-price">2400 ₴<span class="old">3000 ₴</span><span
+                                                class="discount">-20%</span></p>
+                                    </div>
+                                    <div class="catalog-grid-item-info">
+                                        <div class="left">
+                                            <p>Колір</p>
+                                            <div class="colors">
+                                                <div class="color" style="--color: #37414a"></div>
+                                                <div class="color" style="--color: #887a70"></div>
+                                                <div class="color" style="--color: #758870"></div>
+                                                <div class="color" style="--color: #1a1715"></div>
+                                                <div class="color" style="--color: #b34a4c"></div>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <p>Розмір</p>
+                                            <div class="sizes">
+                                                <div class="size active">S</div>
+                                                <div class="size">M</div>
+                                                <div class="size active">L</div>
+                                                <div class="size active">XL</div>
+                                                <div class="size">XXL</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="icon orange plus add-to-cart">
+                                        <img src="/assets/img/icons/plus.svg" alt="">
+                                    </button>
+                                    <button class="icon white like close">
+                                        <img src="/assets/img/icons/favorite.svg" alt="">
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="no-items-section">
+                            <div class="container">
+                                <h3 class="h3_title">Ще нічого немає<span>.</span></h3>
+                                <p class="sub_title">Але ти ж знаєш — знайдеш.</p>
+                                <a href="/page/catalog.html" class="btn gray">Перейти до каталогу</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!-- Newsletter teaser -->
+            <section class="section__title">
+                <div class="container">
+                    <div class="big_title">
+                        <h2 class="h1_title">Будь у курсі першим<span class="orange">.</span></h2>
+                        <p class="sub_title">Надішлемо, коли буде щось справді варте.
+                        </p>
+                        <form action="" class="form_email">
+                            <div class="input-box">
+                                <label for="email">Електронна пошта</label>
+                                <div class="input ">
+                                    <input type="email" id="email" placeholder="Електронна пошта" />
+                                </div>
+                                <div class="input-text">повідомлення про помилку</div>
+                            </div>
+                            <button class="btn orange">Підписатись</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="toast green">
+            <p>Товар успішно додано до кошику.</p>
+            <button class="icon">
+                <img src="/assets/img/icons/close_white.svg" alt="">
+            </button>
+        </div>
+    </main>
+
+    <div class="footer_component"></div>
+
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script defer src="/assets/js/components/account.js"></script>
+    <script defer src="/assets/js/components/close-btn.js"></script>
+    <script defer src="/assets/js/components/toast.js"></script>
+
+</body>
+
+</html>
