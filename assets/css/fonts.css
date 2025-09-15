@@ -1,23 +1,39 @@
-/* Mariupol Regular */
+/* Geologica Light */
 @font-face {
-  font-family: 'Mariupol';
-  src: url('/assets/fonts/Mariupol/Mariupol-Regular.ttf') format('truetype');
+  font-family: 'Geologica';
+  src: url('/assets/fonts/Geologica/Geologica-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Geologica Regular */
+@font-face {
+  font-family: 'Geologica';
+  src: url('/assets/fonts/Geologica/Geologica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
-/* Mariupol Medium */
+/* Geologica Medium */
 @font-face {
-  font-family: 'Mariupol';
-  src: url('/assets/fonts/Mariupol/Mariupol-Medium.ttf') format('truetype');
+  font-family: 'Geologica';
+  src: url('/assets/fonts/Geologica/Geologica-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
-/* Mariupol Bold */
+/* Geologica SemiBold */
 @font-face {
-  font-family: 'Mariupol';
-  src: url('/assets/fonts/Mariupol/Mariupol-Bold.ttf') format('truetype');
+  font-family: 'Geologica';
+  src: url('/assets/fonts/Geologica/Geologica-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Geologica Bold */
+@font-face {
+  font-family: 'Geologica';
+  src: url('/assets/fonts/Geologica/Geologica-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
