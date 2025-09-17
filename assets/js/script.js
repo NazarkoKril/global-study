@@ -1,21 +1,19 @@
 // burger
 document.addEventListener("DOMContentLoaded", () => {
-	const burger = document.querySelector(".burger.mob");
-	const mobileContainer = document.querySelector(".header__mobile_container");
+	const burger = document.querySelector(".burger");
+	const mobileContainer = document.querySelector(".header-mobile-container");
+	const closeBtn = document.querySelector(".header-close");
 	const body = document.body;
 
-	if (burger && mobileContainer) {
+	if (burger && mobileContainer && closeBtn) {
 		burger.addEventListener("click", () => {
-			const isMenuOpen = burger.classList.contains("active");
-
-			burger.classList.toggle("active");
-			mobileContainer.classList.toggle("active");
-
-			if (!isMenuOpen) {
+			mobileContainer.classList.add("active");
 				body.style.overflow = "hidden";
-			} else {
-				body.style.overflow = "";
-			}
+		});
+
+		closeBtn.addEventListener("click", () => {
+			mobileContainer.classList.remove("active");
+			body.style.overflow = "";
 		});
 	}
 });
@@ -24,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // Header Scroll Behavior
 const style = document.createElement("style");
 style.textContent = `
-  .header__container {
+  .header-container {
     transition: transform 0.6s ease-in-out;
   }
-  .header__container.hidden {
+  .header-container.hidden {
     transform: translateY(-100%);
   }
 `;
