@@ -12,7 +12,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 130px;
 }
 
 .container_pd {
@@ -22,7 +22,12 @@
   padding: 0px 20px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1020px) {
   .container {
     padding: 0 20px;
   }
@@ -33,7 +38,8 @@
   }
 }
 main {
-  padding-top: 56px;
+  padding-top: 120px;
+  overflow: hidden;
 }
 
 html {
@@ -125,6 +131,9 @@ img {
 }
 
 @media (max-width: 1020px) {
+  main {
+    padding-top: 73px;
+  }
   .btn {
     padding: 8px 14px;
     font-size: 14px;
@@ -165,5 +174,9 @@ img {
   }
   .footer-container .footer-link:hover, .footer-container .footer-social:hover {
     color: var(--color_blue);
+  }
+  .contacts-section .contacts-list-item:hover {
+    background-color: var(--color_dark_blue);
+    color: var(--color_white);
   }
 }
