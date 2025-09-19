@@ -827,10 +827,6 @@ body:has(.popup.active) {
                     transform: rotate(180deg) scaleY(0);
                 }
             }
-
-            .faq-item-content {
-                max-height: 200px;
-            }
         }
     }
 }
@@ -1216,10 +1212,6 @@ body:has(.popup.active) {
 
             &.active {
                 border-radius: 30px;
-
-                .faq-item-content {
-                    max-height: 320px;
-                }
             }
         }
     }

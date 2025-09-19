@@ -865,9 +865,6 @@ body:has(.popup.active) {
   -webkit-transform: rotate(180deg) scaleY(0);
           transform: rotate(180deg) scaleY(0);
 }
-.faq-section .faq-item.active .faq-item-content {
-  max-height: 200px;
-}
 
 .cta-section.cta-lang {
   overflow: visible;
@@ -1187,9 +1184,6 @@ body:has(.popup.active) {
   }
   .faq-section .faq-item.active {
     border-radius: 30px;
-  }
-  .faq-section .faq-item.active .faq-item-content {
-    max-height: 320px;
   }
   .cta-section.cta-lang {
     margin-top: 60px;
