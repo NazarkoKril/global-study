@@ -130,6 +130,15 @@ img {
   color: #A0A0A0;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  color: var(--color_dark_blue);
+  text-align: center;
+}
+
 @media (max-width: 1020px) {
   main {
     padding-top: 73px;
@@ -155,6 +164,11 @@ img {
     padding: 11px 24px;
     font-size: 14px;
     line-height: 18px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 @media (hover: hover) and (pointer: fine) {
