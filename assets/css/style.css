@@ -1357,6 +1357,7 @@ footer {
   border: none;
   background: none;
   position: sticky;
+  z-index: 1;
   justify-self: flex-end;
   top: 0;
   margin-right: -20px;
