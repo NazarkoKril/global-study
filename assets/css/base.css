@@ -91,6 +91,7 @@ img {
   border: none;
   -webkit-transition: var(--trans);
   transition: var(--trans);
+  cursor: pointer;
 }
 .btn.btn_light {
   background-color: var(--color_blue);
@@ -192,5 +193,21 @@ img {
   .contacts-section .contacts-list-item:hover {
     background-color: var(--color_dark_blue);
     color: var(--color_white);
+  }
+  .faq-section .faq-item-header:hover,
+  .universities-section .university-header:hover {
+    -webkit-box-shadow: 0 0 0 2px var(--color_blue), 0px 6px 16px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 0 2px var(--color_blue), 0px 6px 16px rgba(0, 0, 0, 0.25);
+  }
+  .universities-section .university-header:hover .university-btn img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .universities-section .faculty-header:hover img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .popup-container .close-btn:hover svg path {
+    fill: var(--color_blue);
   }
 }

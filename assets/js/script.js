@@ -63,3 +63,12 @@ if (headerContainer) {
 	});
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+AOS.init({
+    delay: 100,
+    duration: 500, 
+    easing: 'ease-out',
+    once: true,
+	disable: 'mobile'
+});
+});

@@ -7,6 +7,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <!-- fav-icon -->
     <link rel="icon" href="" type="image/x-icon">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+    <script src="/assets/js/preloader.js"></script>
     <div class="header_component"></div>
 
     <main>
@@ -21,42 +23,43 @@
             <div class="container">
                 <h1>Зв’язатися з нами</h1>
                 <ul class="contacts-list">
-                    <li>
+                    <li data-aos="zoom-in">
                         <a href="https://instagram.com/globalstudysk" target="_blank" class="contacts-list-item">
                             <img src="/assets/img/icons/instagram_light.svg" alt="">
                             Instagram
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in">
                         <a href="https://facebook.com/GlobalStudySk" target="_blank" class="contacts-list-item">
                             <img src="/assets/img/icons/facebook_light.svg" alt="">
                             Facebook
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in">
                         <a href="https://t.me/globalstudysk" target="_blank" class="contacts-list-item">
                             <img src="/assets/img/icons/telegram_light.svg" alt="">
                             Telegram
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in">
                         <a href="mailto:info@globalstudy.net.ua" class="contacts-list-item">
                             <img src="/assets/img/icons/email_light.svg" alt="">
                             info@globalstudy.net.ua
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in">
                         <a href="tel:+380988382288" class="contacts-list-item">
                             <img src="/assets/img/icons/tel_light.svg" alt="">
                             +380 (98) 838 22 88
                         </a>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section class="cta-section">
+        <section class="cta-section" data-aos="fade-up">
             <div class="container">
                 <div class="cta-content">
-                    <div class="cta-info">
+                    <div class="cta-info" data-aos="fade-right">
                         <h2>Залишай заявку на консультацію і ми зв’яжимось з тобою!</h2>
                     
                         <form class="cta-form">
@@ -68,20 +71,23 @@
                                     <input type="text" placeholder="Телефон або телеграм нік" required>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn_light">
+                            <button type="submit" class="btn btn_light thanks-btn">
                                 Залишити заявку
                             </button>
                         </form>
                     </div>
                 
-                    <div class="cta-image-wrapper">
+                    <div class="cta-image-wrapper" data-aos="fade-left">
                         <div class="circle"></div>
                         <img src="/assets/img/team-photo.png" alt="Команда">
                     </div>
                 </div>
             </div>
         </section>
-
+        <div id="thanks-popup">
+            <h2>Дякуємо!</h2>
+            <p>Ваша заявка успішно відправлена.</p>
+        </div>
     </main>
 
     <div class="footer_component"></div>
@@ -89,6 +95,8 @@
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/footer.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/thanks.js"></script>
 
 </body>
 

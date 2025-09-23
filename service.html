@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
+    <link rel="stylesheet" href="/assets/css/aos.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <!-- fav-icon -->
     <link rel="icon" href="" type="image/x-icon">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <script src="/assets/js/preloader.js"></script>
     <div class="header_component"></div>
 
     <main>
@@ -20,7 +22,7 @@
             <div class="container">
                 <h2 class="title">Наші послуги</h2>
                 <div class="services">
-                    <div class="services-item">
+                    <div class="services-item" data-aos="fade-right">
                         <div class="left">
                             <div class="services-item-photo">
                                 <img src="/assets/img/boy_student_photo.png" alt="Фото хлопця-старшокласника">
@@ -33,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-item">
+                    <div class="services-item" data-aos="fade-right">
                         <div class="left">
                             <div class="services-item-photo">
                                 <img src="/assets/img/girl_student_photo.png" alt="Фото випускниці школи">
@@ -46,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-item reverse">
+                    <div class="services-item reverse" data-aos="fade-left">
                         <div class="left">
                             <div class="services-item-photo">
                                 <img src="/assets/img/student_photo.png" alt="Фото випускниці університету у мантії та капелюсі">
@@ -64,9 +66,9 @@
         </section>
         <section class="help-section">
             <div class="container">
-                <h2 class="title">З чим ми допоможемо</h2>
+                <h2 class="title" data-aos="fade-up">З чим ми допоможемо</h2>
                 <div class="help-list">
-                    <div class="help-item">
+                    <div class="help-item" data-aos="zoom-in">
                         <div class="help-item-top green">
                             <h4>Вибір університету та спеціальності</h4>
                         </div>
@@ -78,7 +80,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="help-item">
+                    <div class="help-item" data-aos="zoom-in">
                         <div class="help-item-top blue">
                             <h4>Готуємо необхідні документи для вступу в університет</h4>
                         </div>
@@ -90,7 +92,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="help-item">
+                    <div class="help-item" data-aos="zoom-in">
                         <div class="help-item-top purple">
                             <h4>Допомагаємо з поселенням</h4>
                         </div>
@@ -106,7 +108,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="help-item">
+                    <div class="help-item" data-aos="zoom-in">
                         <div class="help-item-top dark">
                             <h4>Забезпечуємо послуги з підготовки документів на тимчасове проживання</h4>
                         </div>
@@ -119,7 +121,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="help-item">
+                    <div class="help-item" data-aos="zoom-in">
                         <div class="help-item-top orange">
                             <h4>Вивчення мови<br>(по бажанню)</h4>
                         </div>
@@ -137,15 +139,15 @@
         </section>
         <section class="price-section">
             <div class="container">
-                <h2 class="title">Вартість наших послуг</h2>
+                <h2 class="title" data-aos="fade-up">Вартість наших послуг</h2>
                 <div class="price-content">
-                    <div class="price-block light">
+                    <div class="price-block light" data-aos="zoom-in-right">
                         <p class="price-block-label">Стандартний</p>
                         <p class="price-block-price">€ 1290</p>
                         <p class="price-block-text">Повний опис, що входить в пакет послуг читай в деталях!</p>
                         <button class="btn btn_dark" id="popup-btn">Дізнатися деталі</button>
                     </div>
-                    <div class="price-block dark">
+                    <div class="price-block dark" data-aos="zoom-in-left">
                         <p class="price-block-label">Персональна знижка</p>
                         <p class="price-block-price">-7%</p>
                         <p class="price-block-text">Вступай разом з друзями та<br>отримуй знижку від нашої команди!</p>
@@ -154,10 +156,10 @@
                 </div>
             </div>
         </section>
-        <section class="cta-section">
+        <section class="cta-section" data-aos="fade-up">
             <div class="container">
                 <div class="cta-content">
-                    <div class="cta-info">
+                    <div class="cta-info" data-aos="fade-right">
                         <h2>Залишай заявку на консультацію і ми зв’яжимось з тобою!</h2>
                     
                         <form class="cta-form">
@@ -169,13 +171,13 @@
                                     <input type="text" placeholder="Телефон або телеграм нік" required>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn_light">
+                            <button type="submit" class="btn btn_light thanks-btn">
                                 Залишити заявку
                             </button>
                         </form>
                     </div>
                 
-                    <div class="cta-image-wrapper">
+                    <div class="cta-image-wrapper" data-aos="fade-left">
                         <div class="circle"></div>
                         <img src="/assets/img/team-photo.png" alt="Команда">
                     </div>
@@ -184,7 +186,11 @@
         </section>
         <div class="popup" id="popup">
             <div class="popup-container">
-                <button class="close-btn"><img src="/assets/img/icons/crose.svg" alt=""></button>
+                <button class="close-btn">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.684 13.1686C14.8852 13.3698 14.9982 13.6426 14.9982 13.9272C14.9982 14.2117 14.8852 14.4846 14.684 14.6858C14.4828 14.887 14.2099 15 13.9253 15C13.6408 15 13.3679 14.887 13.1667 14.6858L7.5 9.01766L1.83154 14.684C1.63034 14.8852 1.35744 14.9982 1.07289 14.9982C0.788345 14.9982 0.51545 14.8852 0.314243 14.684C0.113037 14.4828 2.99821e-09 14.2099 0 13.9254C-2.99821e-09 13.6409 0.113037 13.368 0.314243 13.1668L5.9827 7.50045L0.316028 1.83233C0.114822 1.63113 0.0017851 1.35825 0.0017851 1.07372C0.0017851 0.78919 0.114822 0.516312 0.316028 0.315117C0.517235 0.113922 0.790129 0.00089233 1.07468 0.000892327C1.35923 0.000892324 1.63212 0.113922 1.83333 0.315117L7.5 5.98324L13.1685 0.314224C13.3697 0.11303 13.6426 -4.74031e-09 13.9271 0C14.2117 4.74031e-09 14.4845 0.11303 14.6858 0.314224C14.887 0.515419 15 0.788297 15 1.07283C15 1.35736 14.887 1.63024 14.6858 1.83143L9.0173 7.50045L14.684 13.1686Z" fill="#222A3F"/>
+                    </svg>
+                </button>
                 <h2 class="title">Що входить в вартість тарифу</h2>
                 <ul>
                     <li>Ми допомагаємо обрати освітні заклади</li>
@@ -215,6 +221,10 @@
                 </ul>
             </div>
         </div>
+        <div id="thanks-popup">
+            <h2>Дякуємо!</h2>
+            <p>Ваша заявка успішно відправлена.</p>
+        </div>
     </main>
 
     <div class="footer_component"></div>
@@ -223,6 +233,8 @@
     <script src="/assets/js/footer.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/popup.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/thanks.js"></script>
 
 </body>
 

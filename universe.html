@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
+    <link rel="stylesheet" href="/assets/css/aos.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <!-- fav-icon -->
     <link rel="icon" href="" type="image/x-icon">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <script src="/assets/js/preloader.js"></script>
     <div class="header_component"></div>
 
     <main>
@@ -26,7 +28,7 @@
                     <div class="tab-underline"></div>
                 </div>
                 <div class="tab-content active" id="tab1">
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo1.png" alt="Лого технічного університету Косище">
@@ -224,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo2.png" alt="Лого університету Павла Йозефа Шафарика">
@@ -422,7 +424,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo3.png" alt="Лого університету ветеринарної медицини та фармацевтики">
@@ -620,7 +622,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo4.png" alt="Лого пряшівського університету">
@@ -818,7 +820,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo3.png" alt="Лого пряшівського університету">
@@ -1017,8 +1019,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content active" id="tab2">
-                    <div class="accordion university">
+                <div class="tab-content" id="tab2">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo2.png" alt="Лого університету Павла Йозефа Шафарика">
@@ -1216,7 +1218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo3.png" alt="Лого університету ветеринарної медицини та фармацевтики">
@@ -1414,7 +1416,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo4.png" alt="Лого пряшівського університету">
@@ -1612,7 +1614,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion university">
+                    <div class="accordion university" data-aos="fade-up">
                         <div class="accordion-header university-header">
                             <div class="university-logo">
                                 <img src="/assets/img/uni_logo3.png" alt="Лого пряшівського університету">
@@ -1813,10 +1815,10 @@
                 </div>
             </div>
         </section>
-        <section class="cta-section">
+        <section class="cta-section" data-aos="fade-up">
             <div class="container">
                 <div class="cta-content">
-                    <div class="cta-info">
+                    <div class="cta-info" data-aos="fade-right">
                         <h2>Залишай заявку на консультацію і ми зв’яжимось з тобою!</h2>
                     
                         <form class="cta-form">
@@ -1828,20 +1830,23 @@
                                     <input type="text" placeholder="Телефон або телеграм нік" required>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn_light">
+                            <button type="submit" class="btn btn_light thanks-btn">
                                 Залишити заявку
                             </button>
                         </form>
                     </div>
                 
-                    <div class="cta-image-wrapper">
+                    <div class="cta-image-wrapper" data-aos="fade-left">
                         <div class="circle"></div>
                         <img src="/assets/img/team-photo.png" alt="Команда">
                     </div>
                 </div>
             </div>
         </section>
-
+        <div id="thanks-popup">
+            <h2>Дякуємо!</h2>
+            <p>Ваша заявка успішно відправлена.</p>
+        </div>
     </main>
 
     <div class="footer_component"></div>
@@ -1851,6 +1856,8 @@
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/tab.js"></script>
     <script src="/assets/js/accordione.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/thanks.js"></script>
 
 </body>
 

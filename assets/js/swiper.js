@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".swiper", {
         slidesPerView: "1",
         spaceBetween: 130, 
+        speed: 1200,
         loop: false,
         navigation: {
             nextEl: ".swiper-button-next",
