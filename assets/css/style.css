@@ -2298,7 +2298,7 @@ body:has(.popup.active) {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: white;
-  padding: 25px;
+  padding: 30px;
   border-radius: 15px;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -2307,7 +2307,8 @@ body:has(.popup.active) {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-out, z-index 0.1s ease-out 0.3s;
   transition: opacity 0.3s ease-out, z-index 0.1s ease-out 0.3s;
-  width: 300px;
+  max-width: 500px;
+  min-width: 300px;
   background: var(--color_white);
 }
 #thanks-popup.active {
@@ -2322,7 +2323,7 @@ body:has(.popup.active) {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #thanks-popup p {
   color: var(--color_dark_blue);
@@ -2330,6 +2331,11 @@ body:has(.popup.active) {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0%;
+}
+#thanks-popup img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
 }
 
 .preloader {
