@@ -324,7 +324,7 @@ footer {
 .hero-section .badges {
   position: absolute;
   z-index: 3;
-  top: 37.63%;
+  top: 17%;
   width: 100%;
 }
 .hero-section .badge {
@@ -353,7 +353,7 @@ footer {
 .hero-section .badge.dark {
   background-color: var(--color_dark_blue);
   color: var(--color_white);
-  margin-left: 5.92%;
+  margin-left: 5%;
   margin-bottom: 26px;
 }
 .hero-section .badge.light {
@@ -864,6 +864,7 @@ footer {
   background-color: var(--color_white);
   -webkit-transition: var(--trans);
   transition: var(--trans);
+  position: relative;
 }
 .universities-section .university:not(:last-child) {
   margin-bottom: 20px;
@@ -882,6 +883,8 @@ footer {
   cursor: pointer;
   -webkit-transition: var(--trans);
   transition: var(--trans);
+  position: relative;
+  z-index: 1;
 }
 .universities-section .university-header p {
   font-weight: 400;
@@ -946,8 +949,31 @@ footer {
   transition: var(--trans);
   overflow: hidden;
 }
+.universities-section .university-photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.universities-section .university-photo .static-photo {
+  width: 100%;
+  height: 100%;
+}
+.universities-section .university-photo img {
+  width: 260%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -75%;
+  margin-top: -10%;
+  -webkit-filter: brightness(130%) opacity(40%);
+          filter: brightness(130%) opacity(40%);
+}
 .universities-section .university-info {
   padding: 32px 69px 60px;
+  position: relative;
+  z-index: 1;
 }
 .universities-section .university.active {
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -962,7 +988,8 @@ footer {
   border: 2px solid transparent;
   border-top: none;
   max-width: 840px;
-  background-color: var(--color_white);
+  -webkit-transition: all 0s ease-out 0.3s;
+  transition: all 0s ease-out 0.3s;
 }
 .universities-section .faculty:not(:last-child) {
   margin-bottom: 12px;
@@ -1043,6 +1070,9 @@ footer {
 .universities-section .faculty.active {
   border: 2px solid var(--color_light_blue);
   border-top: none;
+  background-color: var(--color_white);
+  -webkit-transition: none;
+  transition: none;
 }
 .universities-section .faculty.active .faculty-header img {
   -webkit-transform: rotate(90deg);
@@ -1363,6 +1393,7 @@ footer {
   margin-right: -20px;
   width: 28px;
   margin-left: auto;
+  cursor: pointer;
 }
 .popup-container .close-btn svg {
   height: 28px;
@@ -2272,7 +2303,7 @@ body:has(.popup.active) {
     right: 7.6%;
   }
   .hero-section .badges {
-    top: 46.45%;
+    top: 30%;
   }
   .hero-section .badge {
     padding: 3px 6px;
@@ -2285,7 +2316,7 @@ body:has(.popup.active) {
   }
   .hero-section .badge.dark {
     margin-left: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
   .hero-section .badge.light {
     margin-right: 8.19%;

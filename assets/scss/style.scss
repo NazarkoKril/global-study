@@ -292,7 +292,7 @@ footer {
     .badges {
         position: absolute;
         z-index: 3;
-        top: 37.63%;
+        top: 17%;
         width: 100%;
     }
 
@@ -317,7 +317,7 @@ footer {
         &.dark {
             background-color: var(--color_dark_blue);
             color: var(--color_white);
-            margin-left: 5.92%;
+            margin-left: 5%;
             margin-bottom: 26px;
         }
 
@@ -805,6 +805,7 @@ footer {
         max-width: 978px;
         background-color: var(--color_white);
         transition: var(--trans);
+        position: relative;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -819,6 +820,8 @@ footer {
             border-radius: 50px;
             cursor: pointer;
             transition: var(--trans);
+            position: relative;
+            z-index: 1;
 
             p {
                 font-weight: 400;
@@ -875,10 +878,35 @@ footer {
             max-height: 0;
             transition: var(--trans);
             overflow: hidden;
+            // position: relative;
+        }
+
+        &-photo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            overflow: hidden;
+            border-radius: 50px;
+
+            .static-photo {
+                width: 100%;
+                height: 100%;
+            }
+
+            img {
+                width: 260%;
+                object-fit: cover;
+                margin-left: -75%;
+                margin-top: -10%;
+                filter: brightness(130%) opacity(40%);
+            }
         }
 
         &-info {
             padding: 32px 69px 60px;
+            position: relative;
+            z-index: 1;
         }
 
         &.active {
@@ -897,7 +925,7 @@ footer {
         border: 2px solid transparent;
         border-top: none;
         max-width: 840px;
-        background-color: var(--color_white);
+        transition: all 0s ease-out 0.3s;
 
         &:not(:last-child) {
             margin-bottom: 12px;
@@ -937,6 +965,7 @@ footer {
 
         &-info {
             padding: 32px 57px;
+        // background-color: var(--color_white);
 
             h6 {
                 font-weight: 600;
@@ -980,6 +1009,8 @@ footer {
         &.active {
             border: 2px solid var(--color_light_blue);
             border-top: none;
+        background-color: var(--color_white);
+        transition: none;
 
             .faculty-header img {
                 transform: rotate(90deg);
@@ -1295,6 +1326,7 @@ footer {
             margin-right: -20px;
             width: 28px;
             margin-left: auto;
+            cursor: pointer;
 
             svg {
                 height: 28px;
@@ -2364,7 +2396,7 @@ body:has(.popup.active) {
         }
 
         .badges {
-            top: 46.45%;
+            top: 30%;
         }
 
         .badge {
@@ -2379,7 +2411,7 @@ body:has(.popup.active) {
 
             &.dark {
                 margin-left: 0;
-                margin-bottom: 28px;
+                margin-bottom: 20px;
             }
 
             &.light {
